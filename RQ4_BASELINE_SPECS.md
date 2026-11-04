@@ -7,7 +7,7 @@ Common setting for the adaptations: daily context of k = 2,000 rows, labels arri
 ---
 ## 1. RONI (Reject On Negative Impact)
 
-**Official code.** None found for the original. Closest public implementation: `RONIDefense` in IBM/Trusted-AI Adversarial Robustness Toolbox, https://github.com/Trusted-AI/adversarial-robustness-toolbox (MIT; README heading "v1.20"; the Releases section was empty on the page, so release date [VERIFY]). Docs signature from https://adversarial-robustness-toolbox.readthedocs.io/en/latest/modules/defences/detector_poisoning.html: `RONIDefense(classifier, x_train, y_train, x_val, y_val, perf_func='accuracy', pp_cal=0.2, pp_quiz=0.2, calibrated=True, eps=0.1)`; methods `detect_poison`, `evaluate_defence`, `get_calibration_info`, `is_suspicious`. The page does not explain `pp_cal`, `pp_quiz`, `eps` [VERIFY in source].
+**Official code.** None found for the original. Closest public implementation: `RONIDefense` in IBM/Trusted-AI Adversarial Robustness Toolbox, https://github.com/Trusted-AI/adversarial-robustness-toolbox (MIT; PyPI https://pypi.org/project/adversarial-robustness-toolbox/ shows 1.20.1 released 7 Jul 2025, previous 1.20.0 on 30 Jun 2025). Docs signature from https://adversarial-robustness-toolbox.readthedocs.io/en/latest/modules/defences/detector_poisoning.html: `RONIDefense(classifier, x_train, y_train, x_val, y_val, perf_func='accuracy', pp_cal=0.2, pp_quiz=0.2, calibrated=True, eps=0.1)`; methods `detect_poison`, `evaluate_defence`, `get_calibration_info`, `is_suspicious`. The page does not explain `pp_cal`, `pp_quiz`, `eps` [VERIFY in source].
 
 **Algorithm (original, Nelson et al. 2008, https://www.usenix.org/event/leet08/tech/full_papers/nelson/nelson_html/, section 5.1).**
 1. For a candidate Q, sample a training set T (20 messages) and a validation set V (50 messages) from the initial pool.
@@ -33,7 +33,7 @@ Common setting for the adaptations: daily context of k = 2,000 rows, labels arri
 ---
 ## 2. Confident learning (cleanlab)
 
-**Official code.** https://github.com/cleanlab/cleanlab, Apache-2.0. Latest release shown: v2.9.0, "13 Jan" (year not shown on the releases page, [VERIFY]); previous v2.8.0 "08 Jan", v2.7.1 "27 Feb". Docs: https://docs.cleanlab.ai/stable/cleanlab/filter.html.
+**Official code.** https://github.com/cleanlab/cleanlab, Apache-2.0. Latest release per PyPI (https://pypi.org/project/cleanlab/): 2.9.0 on 13 Jan 2026; 2.8.0 on 8 Jan 2026; 2.7.1 on 27 Feb 2025. Docs: https://docs.cleanlab.ai/stable/cleanlab/filter.html.
 
 **Algorithm (Northcutt et al., https://arxiv.org/pdf/1911.00068, section 3).**
 1. Obtain out-of-sample predicted probabilities P (n x m), e.g. by cross-validation (the paper fixes 4 folds in its experiments).
@@ -72,6 +72,8 @@ Common setting for the adaptations: daily context of k = 2,000 rows, labels arri
 - C-K2: "relabel" mode and "drop/hold" mode are both run; only hold-mode is comparable to the other filters' output.
 - C-K3: neighbours drawn from the retained clean context, not the poisoned batch, to prevent coordinated poisoned points from vouching for each other (the attack Koh et al. 2022 use: poisoned points placed near one another).
 - C-K4: k, eta tuned on V_t.
+- C-K5: expect distribution drift from filtering. In AndroVenom (https://arxiv.org/pdf/2503.11841) Deep k-NN filtering cut TPR of a gradient-boosted model by about 20% (FPR 0.1%, k = 11) while raising an NN's by 20%, and did not stop the targeted attack; the authors suspect filtering-induced drift. Report LightGBM and TabFM separately and log the share of clean rows removed.
+- Related variant: Deep k-NN (Peri et al., cited by Lan et al., not opened) and the KSSD relabelling that Taheri et al. (https://arxiv.org/pdf/1908.04473) criticise for low accuracy; neither is specified here.
 
 ---
 ## 4. Source-level method A: M-MSR (Ma and Olshevsky)
@@ -113,5 +115,6 @@ Common setting for the adaptations: daily context of k = 2,000 rows, labels arri
 
 ---
 ## Notes
+- ICLShield (https://arxiv.org/pdf/2507.01321) is not a filtering baseline: it appends k clean demonstrations (k/2 by cosine similarity of LLM embeddings to the poisoned demonstration, k/2 by P(y|x, poisoned demo)) drawn from a clean pool D. A TabFM analogue (append trusted rows near the target region of the context) is a possible extra comparator, a choice not specified in the outline.
 - FLTrust (https://arxiv.org/pdf/2012.13995) is the reference point for "a clean root dataset removes the honest-majority limit" (read abstract/intro only), and is a candidate in place of Method B if a trusted V_t is already assumed; not specified further here.
 - The optional data-valuation baseline (Data Shapley, KNN-Shapley, TracIn) was read at abstract level only; no spec is given.
