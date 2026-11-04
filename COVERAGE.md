@@ -1,53 +1,81 @@
-# COVERAGE (v1)
+# COVERAGE (v2)
 
-**"Đã kiểm chứng"** = trạng thái OK / FIX applied (REF_CHECK) hoặc OK (opened) (RQ4 / lần mở mới). **Không tính** STUB (bib không đính kèm), provisional (chỉ đọc tóm tắt/một phần), NOT_FOUND, [VERIFY]. Các nhóm do tôi đặt; cần NCS chỉnh theo cấu trúc tiểu luận.
+**"Đã kiểm chứng"** = trạng thái OK / FIX applied (gồm: REF_CHECK, trang nguồn đã mở, hoặc mục từ `rq2_REFS_v2_1.bib` có phần phương pháp đã đọc theo PRIOR_ART_1/NOVELTY_AUDIT_2). **Không tính** provisional (chỉ tóm tắt/đoạn trích/một phần), NOT_FOUND, [VERIFY]. Nhóm do tôi đặt; NCS chỉnh theo cấu trúc tiểu luận.
 
-| Nhóm nhỏ | Đã kiểm chứng / số khóa liệt kê | Cờ |
+| Nhóm nhỏ | Đã kiểm chứng / số khóa | Cờ |
 |---|---|---|
-| Khảo sát trôi dạt khái niệm | 3 / 3 | đủ |
-| Đánh giá theo thời gian / rò rỉ trong bảo mật | 4 / 4 | đủ |
+| Khảo sát trôi dạt khái niệm | 4 / 4 | đủ |
+| Đánh giá theo thời gian / rò rỉ trong bảo mật | 5 / 5 | đủ |
 | Nhãn trễ | 3 / 3 | đủ |
-| Lỗi nhãn của bộ dữ liệu NIDS | 2 / 2 | **<3** |
+| Lỗi nhãn / hạn chế của bộ dữ liệu NIDS | 5 / 5 | đủ |
 | Bộ dữ liệu NetFlow | 6 / 6 | đủ |
-| Kiến trúc mô hình nền dạng bảng | 5 / 5 | đủ |
+| Kiến trúc mô hình nền dạng bảng | 7 / 7 | đủ |
 | Chi phí suy luận của mô hình nền dạng bảng | 1 / 1 | **<3** |
 | Mô hình nền dạng bảng dưới trôi dạt / luồng | 3 / 3 | đủ |
-| Mô hình nền dạng bảng cho IDS | 1 / 1 | **<3** |
-| Chọn/truy xuất ngữ cảnh cho mô hình nền dạng bảng | 2 / 5 | **<3** |
-| Replay / bộ nhớ trong học liên tục | 1 / 6 | **<3** |
-| Khai thác mẫu âm khó / chọn theo độ khó | 0 / 4 | **<3** |
-| Học liên tục cho IDS có bộ nhớ | 0 / 4 | **<3** |
-| Active learning cho luồng / ngân sách nhãn | 4 / 4 | đủ |
+| Mô hình nền dạng bảng cho IDS | 2 / 2 | **<3** |
+| Chọn/truy xuất ngữ cảnh cho mô hình nền dạng bảng | 8 / 8 | đủ |
+| Replay / bộ nhớ trong học liên tục | 7 / 7 | đủ |
+| Khai thác mẫu âm khó / chọn theo độ khó | 5 / 5 | đủ |
+| Học liên tục cho IDS có bộ nhớ | 4 / 5 | đủ |
+| Active learning cho luồng / ngân sách nhãn | 7 / 7 | đủ |
 | Giảm lỗi kỳ vọng (expected error reduction) | 1 / 1 | **<3** |
-| Active learning gắn với mô hình nền dạng bảng | 0 / 1 | **<3** |
+| Active learning gắn với mô hình nền dạng bảng | 1 / 1 | **<3** |
 | Phương pháp nhãn nhiễu / làm sạch nhãn | 3 / 4 | đủ |
 | Đầu độc nhãn trên NIDS / malware | 0 / 6 | **<3** |
 | Đầu độc ngữ cảnh ICL / mô hình nền dạng bảng | 3 / 7 | đủ |
 | Chứng nhận độ bền trước đầu độc | 1 / 4 | **<3** |
-| Kiểm toán nguồn / đánh giá chất lượng người gán nhãn | 1 / 6 | **<3** |
+| Kiểm toán nguồn / chất lượng người gán nhãn | 1 / 8 | **<3** |
+| Chống đầu độc ở mức cập nhật (học liên kết, tiếng Việt) | 2 / 3 | **<3** |
 | Ảnh hưởng mẫu / định giá dữ liệu | 0 / 3 | **<3** |
 | Phương pháp đánh giá (tiền đăng ký, phương sai) | 4 / 4 | đủ |
 | Thống kê (kiểm định, bootstrap khối) | 5 / 5 | đủ |
 
-## Nhóm dưới 3 tài liệu đã kiểm chứng, và tài liệu cần mở (chỉ tiêu đề, [TO OPEN])
+## Nhóm dưới 3 tài liệu đã kiểm chứng: khóa còn ở mức provisional và tài liệu cần mở
 
-Tiêu đề dưới đây chọn từ hiểu biết của tôi, chưa mở trang nguồn; không phải tài liệu đã xác minh. Mục *(đã có STUB)* là công trình đã được kiểm toán nhưng thiếu bib.
+Các khóa liệt kê đã có mục bib nhưng mới đọc tóm tắt/đoạn trích; việc cần làm là đọc phương pháp. Tiêu đề [TO OPEN] chọn từ hiểu biết của tôi, chưa mở trang nguồn, không phải tài liệu đã xác minh.
 
-- **Chi phí suy luận của mô hình nền dạng bảng (1):** [TO OPEN] đo thời gian/bộ nhớ của TabPFN v2 và TabICL trong bản gốc (`hollmann2025`, `qu2025tabicl` đã có, cần đọc phần chi phí); báo cáo kỹ thuật `kong2026tabfm` (phần chi phí suy luận).
-- **Mô hình nền dạng bảng cho IDS (1):** [TO OPEN] các đánh giá TabPFN/TabICL trên bộ dữ liệu xâm nhập khác ngoài `garcia2025` (tìm kiếm chưa thực hiện).
-- **Chọn/truy xuất ngữ cảnh:** *(đã có STUB)* `thomas2024localpfn`, `abdullah2026ctxsamp`, `ipas2026lucos`, `ma2024tabdpt` cần mở lại.
-- **Replay trong học liên tục:** *(đã có STUB)* `amalapuram2023ecbrs`, `aljundi2019mir`, `bang2021rainbow`, `shim2021aser`, `mai2022survey`; thêm [TO OPEN] "Experience replay for continual learning" (Rolnick et al., NeurIPS 2019); "A continual learning survey: Defying forgetting in classification tasks" (De Lange et al., TPAMI 2022).
-- **Khai thác mẫu âm khó (0 đã kiểm chứng):** *(đã có STUB)* `felzenszwalb2010` (đọc phương pháp), `shrivastava2016ohem` (đọc phương pháp), `xuan2020hard`, `serra2025uncertainty`; thêm [TO OPEN] bài gốc Sung & Poggio 1998 (PRIOR_ART_1 chưa đọc, chỉ qua OHEM/Felzenszwalb).
-- **Học liên tục cho IDS (1):** *(đã có STUB)* `amalapuram2023ecbrs`, `zhang2025ssf`, `faber2022active`; `ariffin2026` đã mở.
-- **Giảm lỗi kỳ vọng (1) và active learning gắn với mô hình nền dạng bảng (0):** [TO OPEN] "Bayesian active learning for classification and preference learning" (Houlsby et al., 2011); "Deep Bayesian active learning with image data" (Gal et al., ICML 2017); *(đã có STUB)* `treerath2026tabaicl` (NOVELTY_AUDIT_2).
-- **Lỗi nhãn của bộ dữ liệu NIDS (2):** [TO OPEN] "Toward generating a new intrusion detection dataset and intrusion traffic characterization" (Sharafaldin et al., ICISSP 2018) làm nguồn gốc CIC-IDS-2017/2018; thêm công trình về nhãn của ToN_IoT/UNSW-NB15 nếu có (chưa tìm).
-- **Phương pháp nhãn nhiễu (4, đủ), nhưng thiếu khảo sát:** [TO OPEN] "Learning from noisy labels with deep neural networks: A survey" (Song et al., TNNLS 2023); "Learning with noisy labels" (Natarajan et al., NeurIPS 2013).
-- **Chứng nhận độ bền:** chỉ `jia2022knn` đọc phương pháp; `rosenfeld2020`, `levine2021dpa`, `steinhardt2017` mới đọc tóm tắt. [TO OPEN] khảo sát "Dataset security for machine learning: Data poisoning, backdoor attacks, and defenses" (Goldblum et al., TPAMI 2023); cần đọc lại các công trình đã có.
-- **Kiểm toán nguồn:** `dawid1979`, `zhang2025peer`, `cao2022fltrust` là provisional. [TO OPEN] toàn văn Dawid–Skene; "Learning from crowds" (Raykar et al., JMLR 2010); "Peer prediction"/correlated agreement (Shnayder et al., 2016) — chưa mở được trong lần trước.
-- **Ảnh hưởng mẫu / định giá dữ liệu (0):** tất cả mới đọc tóm tắt (`ghorbani2019`, `jia2019knnshap`, `pruthi2020`); [TO OPEN] "Understanding black-box predictions via influence functions" (Koh & Liang, ICML 2017).
-- **Đầu độc NIDS/malware và ICL:** `lan2025`, `dolejs2026`, `ariffin2026` đã đọc một phần; malware mới tìm hai lượt, chưa đầy đủ. [TO OPEN] "Poisoning attacks against support vector machines" (Biggio et al., ICML 2012).
-- **Tài liệu RQ2/RQ3 thiếu bib:** 55 STUB trong `REVIEW_REFS_STATUS.csv` (48 từ PRIOR_ART_1, 7 từ NOVELTY_AUDIT_2); cần `rq2_REFS_v2.bib`/`REFS.bib` để chuyển thành mục đầy đủ.
-- **Tên "Vejling" và "Xu" trong đề cương RQ4 ([34],[35]):** chưa xác định (xem REPORT trước). PRIOR_ART_1 có hai công trình tác giả đầu "Xu" (`xu2024mixturepfn`, `xu2026coreset`); chưa biết có phải [35] hay không.
+- **Chi phí suy luận của mô hình nền dạng bảng** (1/1): provisional/khác: —. [TO OPEN] phần chi phí trong bản gốc TabPFN v2 và TabICL (đã có khóa `hollmann2025`, `qu2025tabicl`, cần đọc); báo cáo `kong2026tabfm` (chi phí suy luận).
+- **Mô hình nền dạng bảng cho IDS** (2/2): provisional/khác: —. 
+- **Giảm lỗi kỳ vọng (expected error reduction)** (1/1): provisional/khác: —. [TO OPEN] "Bayesian active learning for classification and preference learning" (Houlsby et al., 2011); "Deep Bayesian active learning with image data" (Gal et al., ICML 2017).
+- **Active learning gắn với mô hình nền dạng bảng** (1/1): provisional/khác: —. Đọc phương pháp `treerath2026tabaicl` (NOVELTY_AUDIT_2 đã đọc; mục bib từ rq2).
+- **Đầu độc nhãn trên NIDS / malware** (0/6): provisional/khác: `ariffin2026`, `lan2025`, `dolejs2026`, `severi2021`, `taheri2020`, `aryal2022`. Đọc đầy đủ `ariffin2026`, `lan2025`, `dolejs2026`; [TO OPEN] "Poisoning attacks against support vector machines" (Biggio et al., ICML 2012).
+- **Chứng nhận độ bền trước đầu độc** (1/4): provisional/khác: `rosenfeld2020`, `levine2021dpa`, `steinhardt2017`. [TO OPEN] "Dataset security for machine learning: Data poisoning, backdoor attacks, and defenses" (Goldblum et al., TPAMI 2023); đọc phương pháp `rosenfeld2020`, `levine2021dpa`, `steinhardt2017`.
+- **Kiểm toán nguồn / chất lượng người gán nhãn** (1/8): provisional/khác: `miao2018`, `fang2021`, `dawid1979`, `zhang2025peer`, `cao2022fltrust`, `vejling2025`, `xu2016`. Đọc toàn văn `dawid1979`, `zhang2025peer`, `cao2022fltrust`; [TO OPEN] "Learning from crowds" (Raykar et al., JMLR 2010); Shnayder et al. 2016 (peer prediction).
+- **Chống đầu độc ở mức cập nhật (học liên kết, tiếng Việt)** (2/3): provisional/khác: `sameera2025`. `luong2023fedls`, `ha2024` mới đọc bản ghi Crossref (chưa đọc nội dung).
+- **Ảnh hưởng mẫu / định giá dữ liệu** (0/3): provisional/khác: `ghorbani2019`, `jia2019knnshap`, `pruthi2020`. [TO OPEN] "Understanding black-box predictions via influence functions" (Koh & Liang, ICML 2017); đọc phương pháp `ghorbani2019`, `jia2019knnshap`, `pruthi2020`.
+
+## Kiểm tra danh mục tài liệu của đề cương (50 mục) so với danh sách gộp
+
+- Đã có sẵn trong danh sách gộp: 29 mục. Thiếu và đã thêm sau khi mở trang nguồn: 21 mục (liệt kê bên dưới). Trong số đã có sẵn, [34], [35], [36], [37] ở mức provisional (mới đọc tóm tắt/một phần), không phải thiếu mục.
+
+| [n] | Khóa | Nguồn đã mở | Trạng thái |
+|---|---|---|---|
+| [1] | `gupta2025netguard` | arXiv abs | OK (opened: arXiv abs page) |
+| [4] | `ndichu2026stral` | arXiv abs | OK (opened: arXiv abs page) |
+| [10] | `googleblog2026tabfm` | trang blog Google Research | OK (opened); outline claims [VERIFY] |
+| [15] | `kurashkin2026` | Crossref | OK (opened: Crossref) |
+| [16] | `priorlabs2025tabpfn25` | arXiv abs | FIX applied |
+| [18] | `macia2018ugr16` | Crossref | OK (opened: Crossref) |
+| [19] | `goldschmidt2025` | arXiv abs | FIX applied |
+| [20] | `cantone2024` | arXiv abs | FIX applied |
+| [22] | `aldahmani2026` | arXiv abs | OK (opened: arXiv abs page) |
+| [27] | `gonzalez1985` | Crossref | OK (opened: Crossref) |
+| [29] | `barbero2022` | Crossref (kết quả tìm) | OK (opened: Crossref) |
+| [39] | `nguyen2026cdahal` | Crossref | OK (opened: Crossref) |
+| [40] | `thai2022` | Crossref (kết quả tìm) | FIX applied |
+| [41] | `nguyen2025sefed` | Crossref | OK (opened: Crossref) |
+| [42] | `nguyen2025adisrae` | trang VJOL | OK (opened: VJOL page) |
+| [43] | `vu2024` | Crossref (kết quả tìm) | OK (opened: Crossref) |
+| [44] | `tran2023` | Crossref | FIX applied |
+| [45] | `luong2023fedls` | Crossref | OK (opened: Crossref) |
+| [46] | `ha2024` | Crossref | OK (opened: Crossref); volume/issue [VERIFY] |
+| [47] | `lipton2018` | trang PMLR | OK (opened: PMLR page) |
+| [48] | `gomes2017arf` | Crossref | OK (opened: Crossref) |
+
+Điểm lệch giữa đề cương và nguồn đã mở (không sửa đề cương; NCS quyết định): [10] blog Google không nêu giới hạn 10 lớp / 500 đặc trưng hay giấy phép mà phần Tổng quan gán cho [10]; [16] đề cương ghi tác giả "Prior Labs", arXiv ghi Grinsztajn, Flöge, Key và 23 tác giả khác; [19] có bản tạp chí Comput. Secur. 156 (2025) 104510; [20] có bản IEEE Access 12:144489–144508 (2024); [40] DOI trong đề cương bị cụt, Crossref: 10.1109/rivf55975.2022.10013926; [44] Crossref: IEEE IoT-J vol. 10 no. 10, 2023, pp. 8578–8589; [41] Crossref ghi năm 2025; [46] vol./no. chưa xác nhận.
+
+Mục trong danh mục gộp nhưng **không** nằm trong đề cương: phần lớn khóa của Bài 1, RQ4 và RQ2; không liệt kê.
 
 ## Tổng số
-- Khóa trong thư mục gộp: 144; đã kiểm chứng (OK/FIX/OK opened): 57; provisional: 30; STUB: 55; khác ([VERIFY]/NOT_FOUND): 2.
+- Khóa trong thư mục gộp: 167; đã kiểm chứng (OK/FIX): 133; provisional: 32; khác ([VERIFY]/NOT_FOUND, không tính ở trên): 2; STUB: 0.
+- Tên "Vejling" ([34]) và "Xu" ([35]) đã xác định và nằm trong danh sách (`vejling2025`, `xu2016`); `xu2024mixturepfn` và `xu2026coreset` không phải [35].
