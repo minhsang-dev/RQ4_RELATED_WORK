@@ -16,16 +16,16 @@
 | Chọn/truy xuất ngữ cảnh cho mô hình nền dạng bảng | 3 / 8 | đủ |
 | Replay / bộ nhớ trong học liên tục | 2 / 7 | **<3** |
 | Khai thác mẫu âm khó / chọn theo độ khó | 2 / 5 | **<3** |
-| Học liên tục cho IDS có bộ nhớ | 2 / 5 | **<3** |
+| Học liên tục cho IDS có bộ nhớ | 3 / 5 | đủ |
 | Active learning cho luồng / ngân sách nhãn | 7 / 7 | đủ |
 | Giảm lỗi kỳ vọng (expected error reduction) | 1 / 1 | **<3** |
 | Active learning gắn với mô hình nền dạng bảng | 1 / 1 | **<3** |
-| Phương pháp nhãn nhiễu / làm sạch nhãn | 3 / 4 | đủ |
-| Đầu độc nhãn trên NIDS / malware | 0 / 6 | **<3** |
-| Đầu độc ngữ cảnh ICL / mô hình nền dạng bảng | 3 / 7 | đủ |
+| Phương pháp nhãn nhiễu / làm sạch nhãn | 4 / 4 | đủ |
+| Đầu độc nhãn trên NIDS / malware | 5 / 6 | đủ |
+| Đầu độc ngữ cảnh ICL / mô hình nền dạng bảng | 6 / 7 | đủ |
 | Chứng nhận độ bền trước đầu độc | 1 / 4 | **<3** |
-| Kiểm toán nguồn / chất lượng người gán nhãn | 1 / 8 | **<3** |
-| Chống đầu độc ở mức cập nhật (học liên kết, tiếng Việt) | 2 / 3 | **<3** |
+| Kiểm toán nguồn / chất lượng người gán nhãn | 5 / 8 | đủ |
+| Chống đầu độc ở mức cập nhật (học liên kết, tiếng Việt) | 3 / 3 | đủ |
 | Ảnh hưởng mẫu / định giá dữ liệu | 0 / 3 | **<3** |
 | Phương pháp đánh giá (tiền đăng ký, phương sai) | 4 / 4 | đủ |
 | Thống kê (kiểm định, bootstrap khối) | 5 / 5 | đủ |
@@ -38,18 +38,14 @@ Các khóa liệt kê đã có mục bib nhưng mới đọc tóm tắt/đoạn 
 - **Mô hình nền dạng bảng cho IDS** (2/2): provisional/khác: —. Đọc nội dung `aldahmani2026` (mới thấy tóm tắt); tìm thêm đánh giá TabPFN/TabICL cho IDS ngoài `garcia2025` (chưa tìm).
 - **Replay / bộ nhớ trong học liên tục** (2/7): provisional/khác: `aljundi2019mir`, `shim2021aser`, `bang2021rainbow`, `mai2022survey`, `rebuffi2017icarl`. [TO OPEN] "Experience replay for continual learning" (Rolnick et al., NeurIPS 2019); "A continual learning survey: Defying forgetting in classification tasks" (De Lange et al., TPAMI 2022).
 - **Khai thác mẫu âm khó / chọn theo độ khó** (2/5): provisional/khác: `xuan2020hard`, `serra2025uncertainty`, `sung1998bootstrap`. [TO OPEN] bài gốc Sung & Poggio 1998 (mô tả hiện chỉ qua OHEM/Felzenszwalb).
-- **Học liên tục cho IDS có bộ nhớ** (2/5): provisional/khác: `ariffin2026`, `faber2022active`, `xu2026coreset`. 
 - **Giảm lỗi kỳ vọng (expected error reduction)** (1/1): provisional/khác: —. [TO OPEN] "Bayesian active learning for classification and preference learning" (Houlsby et al., 2011); "Deep Bayesian active learning with image data" (Gal et al., ICML 2017). `roy2001eer` mới đọc trang tóm tắt.
 - **Active learning gắn với mô hình nền dạng bảng** (1/1): provisional/khác: —. NOVELTY_AUDIT_2 đã đọc `treerath2026tabaicl`; nhóm RQ3 cần đọc lại đối chiếu với KT3.
-- **Đầu độc nhãn trên NIDS / malware** (0/6): provisional/khác: `ariffin2026`, `lan2025`, `dolejs2026`, `severi2021`, `taheri2020`, `aryal2022`. Đọc đầy đủ `ariffin2026`, `lan2025`, `dolejs2026`; [TO OPEN] "Poisoning attacks against support vector machines" (Biggio et al., ICML 2012).
 - **Chứng nhận độ bền trước đầu độc** (1/4): provisional/khác: `rosenfeld2020`, `levine2021dpa`, `steinhardt2017`. [TO OPEN] "Dataset security for machine learning: Data poisoning, backdoor attacks, and defenses" (Goldblum et al., TPAMI 2023); đọc phương pháp `rosenfeld2020`, `levine2021dpa`, `steinhardt2017`.
-- **Kiểm toán nguồn / chất lượng người gán nhãn** (1/8): provisional/khác: `miao2018`, `fang2021`, `dawid1979`, `zhang2025peer`, `cao2022fltrust`, `vejling2025`, `xu2016`. Đọc toàn văn `dawid1979`, `zhang2025peer`, `cao2022fltrust`; [TO OPEN] "Learning from crowds" (Raykar et al., JMLR 2010); Shnayder et al. 2016 (peer prediction).
-- **Chống đầu độc ở mức cập nhật (học liên kết, tiếng Việt)** (2/3): provisional/khác: `sameera2025`. `luong2023fedls`, `ha2024` mới đọc bản ghi Crossref (chưa đọc nội dung); `sameera2025` đã đọc một phần.
 - **Ảnh hưởng mẫu / định giá dữ liệu** (0/3): provisional/khác: `ghorbani2019`, `jia2019knnshap`, `pruthi2020`. [TO OPEN] "Understanding black-box predictions via influence functions" (Koh & Liang, ICML 2017); đọc phương pháp `ghorbani2019`, `jia2019knnshap`, `pruthi2020`.
 
 ## Kiểm tra danh mục tài liệu của đề cương (50 mục) so với danh sách gộp
 
-- Đã có sẵn trong danh sách gộp: 29 mục (trong đó provisional: [24], [25], [34], [35], [36], [37]; đây không phải mục thiếu). Thiếu và đã thêm sau khi mở trang nguồn: 21 mục, liệt kê dưới đây.
+- Đã có sẵn trong danh sách gộp: 29 mục (trong đó provisional: [24], [25]; đây không phải mục thiếu). Thiếu và đã thêm sau khi mở trang nguồn: 21 mục, liệt kê dưới đây.
 
 | [n] | Khóa | Nguồn đã mở | Trạng thái |
 |---|---|---|---|
@@ -80,6 +76,6 @@ Các khóa liệt kê đã có mục bib nhưng mới đọc tóm tắt/đoạn 
 Các khóa trong danh sách gộp nhưng **không** nằm trong đề cương (Bài 1, RQ4, RQ2) không liệt kê.
 
 ## Tổng số
-- Khóa trong thư mục gộp: 167; đã kiểm chứng (OK/FIX): 91; provisional: 74; khác ([VERIFY]/NOT_FOUND, không tính ở trên): 2; STUB: 0.
+- Khóa trong thư mục gộp: 167; đã kiểm chứng (OK/FIX): 107; provisional: 58; khác ([VERIFY]/NOT_FOUND, không tính ở trên): 2; STUB: 0.
 - Nguồn của 55 mục thay STUB (`rq2_REFS_v2_1.bib`): 13 ở mức OK (mức đọc T hoặc NOVELTY_AUDIT_2), 42 ở mức provisional (mức đọc A/S).
 - "Vejling" ([34]) và "Xu" ([35]) nằm trong danh sách (`vejling2025`, `xu2016`); `xu2024mixturepfn` và `xu2026coreset` không phải [35].
