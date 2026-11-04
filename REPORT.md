@@ -1,9 +1,9 @@
-# REPORT (v2)
+# REPORT (v3)
 
-38 works catalogued from opened pages/PDFs (web search only). None "same". Verdict: **GAP_NARROW**.
+40 works catalogued from opened pages/PDFs. None "same". Verdict stays **GAP_NARROW**, narrower than before.
 
-Added: ICLShield methods read (it appends clean demonstrations, it does not filter); Dawid–Skene (abstract page only); malware poisoning: Severi, Dolejš (pre-ingestion filter), AndroVenom (manipulated AV label sources; Deep k-NN inconsistent), Aryal, Taheri. Resolved venues, cleanlab/ART release dates.
+Added: [34] Vejling et al. 2025 (arXiv 2507.13835) and [35] Xu et al. 2016 (ICML, PMLR 48). Both are source-level tests with false-discovery-rate control. Vejling needs clean local data and exchangeability (the paper says this limits time-series use) and flags honest-but-different agents by design. Xu assumes sparse, non-strategic position bias. Neither adds a row tier, cap or bound, nor an adaptive attacker.
 
-**Not done:** outline refs [34] Vejling and [35] Xu are not identified. Searches for the names found nothing matching. Please send titles or links.
+Consequence: do not claim novelty for a statistical source audit alone; the remaining gap is a reference-free, non-exchangeable same-day audit combined with row filter, cap and bound for tabular in-context models.
 
-Still [VERIFY]: Apruzzese journal name, Ghorbani venue, Aryal/Taheri venues, M-MSR licence, Fang and kNN-cleaning code, cleanlab fold count, a few cost figures. About 14 works rest on abstracts or partial reads (marked provisional).
+Limits: Vejling's appendix and Xu's experiments not read; Xu's PMLR page was seen only as a search result (venue taken from your citation). Still [VERIFY]: venues of Aryal/Taheri/Ghorbani, Apruzzese journal name, M-MSR licence, kNN-cleaning and Fang code.
